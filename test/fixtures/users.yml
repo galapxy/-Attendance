@@ -1,9 +1,4 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  name: MyString
-  email: MyString
-
-two:
-  name: MyString
-  email: MyString
+#このfixtureは第8章になるまで使わない予定なので、
+#今のところはこれらのデータを削除しておき、ユーザー用の
+#fixtureファイルを空にしておきましょう
+#既存のコードは削除
