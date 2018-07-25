@@ -17,18 +17,213 @@
     </div>
   </div>
 <% else %>
-  <div class="center jumbotron">
-    <h1>Welcome to the Sample App</h1>
-  
-    <h2>
-      This is the home page for the
-      <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
-      sample application.
-    </h2>
-  
-    <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
-  </div>
-  
-  <%= link_to image_tag("rails.png", alt: "Rails logo"),
-              'http://rubyonrails.org/' %>
+
+<header class="masthead text-center text-white d-flex">
+  <div class="container my-auto">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h1 class="text-uppercase">
+          <strong class="display-1">ONE  LIFE  TO  LIVE</strong><br>
+          <strong class="display-1">LIVE  A  LIFE  YOU  WILL  REMEMBER</strong>
+        </h1>
+          <hr>
+        </div>
+        <div class="col-lg-8 btn-lg mx-auto">
+            <%= link_to "みんな仲良く！！", signup_path, class:"text-light btn btn-lg js-scroll-trigger top-button" %>
+        </div>
+      </div>
+    </div>
+</header>
+
+<section class="bg-primary" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-heading text-white">みんなで仲良く情報交換しよう！！</h2>
+          <hr class="light my-4">
+          <p class="text-faded mb-4">便利な機能！　オシャレな機能！　ハッピーな機能！　とにかく良いものはどんどんアウトプットして行きましょう！！</p>
+          <%= link_to "新　規　登　録", signup_path, class:"btn btn-light btn-lg js-scroll-trigger" %>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Reference</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+                <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Study</h3>
+              <p class="text-muted mb-0">プログラミング関連の学習に使えるサービス</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-youtube text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">You Tube</h3>
+              <p class="text-muted mb-0">業界説明・プログラミング関連の内容を動画でわかりやすく解説</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Blog</h3>
+              <p class="text-muted mb-0">参考ブログ・記事</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-github text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Code</h3>
+              <p class="text-muted mb-0">ソースコード</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Hobby</h3>
+              <p class="text-muted mb-0">趣味・投資</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="p-0" id="portfolio">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters popup-gallery">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" >
+              <%= image_tag("1.jpg", :class => "img-fluid") %>
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" >
+              <%= image_tag("2.jpg", :class => "img-fluid") %>
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" >
+              <%= image_tag("3.jpg", :class => "img-fluid") %>
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" >
+              <%= image_tag("4.jpg", :class => "img-fluid") %>
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" >
+              <%= image_tag("5.jpg", :class => "img-fluid") %>
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" >
+              <%= image_tag("6.jpg", :class => "img-fluid") %>
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <hr class="my-4">
+            <p class="mb-5">Give me send an email and I'll get back to you as soon as possible!</p>
+          </div>
+        </div>
+        <div class="row">
+          </div>
+          <div class="col-lg-3 ml-auto text-center">
+            <i class="fa fa-twitter fa-3x mb-3 sr-contact"></i>
+            <p><a href="">Twitter</a></p>
+          </div>
+          <div class="col-lg-3 ml-auto text-center">
+            <i class="fa fa-facebook fa-3x mb-3 sr-contact"></i>
+            <p><a href="">Facebook</a></p>
+          </div>
+          <div class="col-lg-3 ml-auto text-center">
+            <i class="fa fa-slack fa-3x mb-3 sr-contact"></i>
+            <p><a href="">Slack</a></p>
+          </div>
+          <div class="col-lg-3 mr-auto text-center">
+            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+            <p><a href="gdgd_rw@icloud.com">MAIL ADDRESS</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
 <% end %>
