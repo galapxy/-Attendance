@@ -4,7 +4,7 @@
 // Styling for the navbar
 #mainNav {
   border-bottom: 1px solid fade-out($gray-900, .9);
-  background-color: $white;
+  background-color: transparent;
   @include sans-serif-font;
   @include transition-all;
   .navbar-brand {
@@ -44,25 +44,25 @@
     border-color: transparent;
     background-color: transparent;
     .navbar-brand {
-      color: fade-out($white, .3);
+      color: fade-out(silver, .3);
       &:focus,
       &:hover {
-        color: $white;
+        color: $primary;
       }
     }
     .navbar-nav > li.nav-item > a.nav-link {
-      padding: 0.5rem 1rem;
+      padding-right:  3rem;
     }
     .navbar-nav > li.nav-item > a.nav-link,
     .navbar-nav > li.nav-item > a.nav-link:focus {
-      color: fade-out($white, .3);
+      color: fade-out(silver, .3);
       &:hover {
-        color: $white;
+        color: $primary;
       }
     }
     &.navbar-shrink {
       border-bottom: 1px solid fade-out($gray-900, .9);
-      background-color: $white;
+      background-color: rgba(255,255,255,0.6);
       .navbar-brand {
         color: $primary;
         &:focus,

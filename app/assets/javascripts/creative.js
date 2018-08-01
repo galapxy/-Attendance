@@ -9,7 +9,7 @@ $(document).ready(function($) {
       if (target.length) {
         $('html, body').animate({
           scrollTop: (target.offset().top - 56)
-        }, 1000, "easeInOutExpo");
+        }, 500, "easeInOutExpo");
         return false;
       }
     }
@@ -47,14 +47,14 @@ $(document).ready(function($) {
     distance: '0px'
   }, 200);
   sr.reveal('.sr-button', {
-    duration: 1000,
+    duration: 600,
     delay: 200
   });
   sr.reveal('.sr-contact', {
     duration: 600,
     scale: 0.3,
     distance: '0px'
-  }, 300);
+  }, 200);
 
   // Magnific popup calls
   $('.popup-gallery').magnificPopup({

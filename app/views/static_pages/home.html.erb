@@ -12,7 +12,7 @@
       </section>
     </aside>
     <div class="col-md-8">
-      <h3>Micropost Feed</h3>
+      <h3>なんでも投稿</h3>
       <%= render 'shared/feed' %>
     </div>
   </div>
@@ -28,8 +28,8 @@
         </h1>
           <hr>
         </div>
-        <div class="col-lg-8 btn-lg mx-auto">
-            <%= link_to "みんな仲良く！！", signup_path, class:"text-light btn btn-lg js-scroll-trigger top-button" %>
+        <div class="col-lg-3 btn-lg mx-auto">
+            <a><%= link_to "みんな仲良く！！", signup_path, class:"text-light btn btn-lg js-scroll-trigger top-button" %></a>
         </div>
       </div>
     </div>
@@ -198,10 +198,10 @@
 <section id="contact">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
+          <div class="col-lg-6 mx-auto text-center">
             <h2 class="section-heading">Let's Get In Touch!</h2>
             <hr class="my-4">
-            <p class="mb-5">Give me send an email and I'll get back to you as soon as possible!</p>
+            <p class="mb-5">Please contact me and I'll get back to you as soon as possible!</p>
           </div>
         </div>
         <div class="row">
@@ -220,7 +220,7 @@
           </div>
           <div class="col-lg-3 mr-auto text-center">
             <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
-            <p><a href="gdgd_rw@icloud.com">MAIL ADDRESS</a></p>
+            <p><%= mail_to "gdgd_rw@icloud.com", "MAIL" %></p>
           </div>
         </div>
       </div>
