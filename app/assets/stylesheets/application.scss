@@ -17,7 +17,7 @@
 
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
-// @import "variables.scss";
+@import "static_pages.scss";
 // @import "mixins.scss";
 @import "global.scss";
 @import "navbar.scss";
