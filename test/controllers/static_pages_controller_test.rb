@@ -29,4 +29,10 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select "title", "Contact | #{@base_title}"
   end
+  
+  test "should get blog" do
+    get blog_path
+    assert_response :success
+    assert_select "title", "Blog | #{@base_title}"
+  end
 end
