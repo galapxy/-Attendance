@@ -1,9 +1,78 @@
 <% provide(:title, "Help") %>
 
-<h1>Help</h1>
-<p>  Get help on the Ruby on Rails Tutorial at the
-  <a href="https://railstutorial.jp/help">Rails Tutorial help section</a>.
-  To get help on this sample app, see the
-  <a href="https://railstutorial.jp/#ebook"><em>Ruby on Rails Tutorial</em>
-  book</a>.
-</p>
+<div class="raw">
+  <div class="cover text-black text-center py-5">
+    <h1 class="display-4 mb-4">Study</h1>
+    <p>Webアプリ制作に使ったサービス紹介</p>
+  </div>
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Ruby</h2>
+            <h3 class="section-subheading text-muted">Ruby on Railsを使って様々なサービスが作られています。</h3>
+            <%= link_to("https://tech-camp.in/note/technology/40581/") do %>
+            <span class="fas fa-gem text-danger"></span>Railsで作られた有名なWebアプリ
+            <% end %>
+            <h3 class="section-subheading text-muted">下記のサービスを使って勉強すれば他の言語でもWebアプリが作れます。</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <div class="portfolio-caption">
+              <h4>Progate</h4>
+              <p class="text-muted">環境構築なしで誰でも無料で始める事ができます。</p>
+            </div>
+            <a class="portfolio-link" href="https://prog-8.com/">
+              <%= image_tag("progate.png", :class => "w-100") %>
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <div class="portfolio-caption">
+              <h4>ドットインストール</h4>
+              <p class="text-muted">動画を見ながらプログラミングの基礎が学べます。</p>
+            </div>
+            <a class="portfolio-link" href="https://dotinstall.com/">
+              <%= image_tag("dinstal.png", :class => "w-100") %>
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <div class="portfolio-caption">
+              <h4>Rails Tutorial</h4>
+              <p class="text-muted">Railsをやる上で絶対的存在！</p>
+            </div>
+            <a class="portfolio-link" href="https://railstutorial.jp/">
+              <%= image_tag("rtutrial.png", :class => "w-100") %>
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <div class="portfolio-caption">
+              <h4>Udemy</h4>
+              <p class="text-muted">有料の動画教材ですが書籍を買うよりコスパが良い！</p>
+            </div>
+            <a class="portfolio-link" href="https://www.udemy.com/">
+              <%= image_tag("udemy.png", :class => "w-100") %>
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <div class="portfolio-caption">
+              <h4>Tutorial Point</h4>
+              <p class="text-muted">様々な言語を詳しく解説しています。</p>
+            </div>
+            <a class="portfolio-link" href="https://www.tutorialspoint.com/index.htm">
+              <%= image_tag("tutrialp.png", :class => "w-100") %>
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <div class="portfolio-caption">
+              <h4>Rails Guid</h4>
+              <p class="text-muted">Ruby on Rails 公式ガイド！</p>
+            </div>
+            <a class="portfolio-link" href="https://railsguides.jp/">
+              <%= image_tag("guid.png", :class => "w-100") %>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+</div>

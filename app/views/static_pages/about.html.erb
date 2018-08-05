@@ -1,19 +1,20 @@
 <% provide(:title, "About") %>
 
 <div class="raw">
-      <div class="cover text-black text-center py-5">
-        <h1 class="display-4 mb-4">About　EVHAP</h1>
-        <p>evryday everyone happily</p>
-      </div>
-    </header>
-    <main>
+  <div class="cover text-black text-center py-5">
+    <h1 class="display-4 mb-4">About　EVHAP</h1>
+    <p>evryday everyone happily</p>
+  </div>
+  <main>
       <section class="py-5">
         <h2 class="text-center mb-5">機　能　紹　介</h2>
         <div class="container">
           <div class="mb-5 raw">
             <div class="col-sm-6">
-              <h3>投稿機能</h3>
+              <h3 class="py-5">投稿機能</h3>
               <p>みんなに知らせたい情報や画像を貼り付けて投稿できます！</p>
+              <h3 class="py-5">フォロー機能</h3>
+              <p>Twitterに似た機能が使えます！</p>
             </div>
               <div class="col-sm-6">
                 <%= image_tag("sample.png", :class => "w-100") %>
@@ -25,18 +26,28 @@
       <section class="py-5">
         <h2 class="mb-5 text-center">追　加　機　能</h2>
         <div class="container">
-          <ul class="nav nav-tabs">
-            <li class="nav-item"><a href="#api" class="nav-link active" data-toggle="tab">ログインAPI</a></li>
-            <li class="nav-item"><a href="#dm" class="nav-link" data-toggle="tab">ダイレクトメッセージ</a></li>
-          </ul>
-          <div class="tab-content py-4">
-            <div id="api" class="tab-pane active">
-              <p>Twitter/Facebook login</p>
-            </div>
-            <div id="dm" class="tab-pane">
-              <p>ユーザーダイレクトメッセージ機能</p>
-            </div>
+          <div class="card-body .col-md-6 .offset-md-3">
+            <div class="default-tab">
+             <nav>
+                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                     <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">APIログイン機能</a>
+                     <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">ダイレクトメッセージ機能</a>
+                     <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">ユーザー検索機能</a>
+                 </div>
+             </nav>
+             <div class="tab-content pl-3 pt-2" id="nav-tabContent">
+                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                   <p>よく使うSNSで認証ログインができます。</p>
+                 </div>
+                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                   <p>ユーザー間で直接メッセージを送れます。</p>
+                 </div>
+                 <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                   <p>ユーザー見つけやすくなります。</p>
+                 </div>
+             </div>
           </div>
+         </div>
         </div>
       </section>
       <section class="bg-primary" id="about">
