@@ -1,10 +1,10 @@
 <h1>始めよう！</h1>
 
-<p>Hi <%= @user.name %>,</p>
+<p>こんにちは <%= @user.name %>,</p>
 
 <p>
-Welcome ! Click on the link below to activate your account:
+ようこそ、EVHAPへ！！　参加する！をクリックして下さい！
 </p>
 
-<%= link_to "Activate", edit_account_activation_url(@user.activation_token,
+<%= link_to "参加する！", edit_account_activation_url(@user.activation_token,
                                                     email: @user.email) %>
